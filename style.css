@@ -1,0 +1,97 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    height: 97vh;
+    display: flex;
+    background-color: bisque;
+}
+
+.container {
+    background-color: black;
+    padding: 15px;
+    margin: auto auto;
+    display: inline-block;
+    border-radius: 10%;
+}
+
+.result {
+    width: 94%;
+    height: 50px;
+    font-size: 40px;
+    text-align: right;
+    color: white;
+}
+
+.input {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+            'control sign'
+            'number sign';
+}
+
+.item {
+    font-size: 1.1em;
+    font-weight: 700;
+    box-sizing: border-box;
+    color: white;
+    margin: 5px;
+    border: 0;
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.number {
+    display: grid;
+    grid-area: number;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    .item {
+        background-color: rgb(56, 56, 56);
+    }
+    button:hover {
+        color: red;
+    }
+    
+}
+
+.control {
+    display: grid;
+    grid-area: control;
+    grid-template-columns: 1fr 1fr 1fr;
+    .item {
+        color: black;
+        background-color: rgb(154, 154, 154);
+    }
+    button:hover {
+        color: red;
+    }
+    
+}
+
+.sign {
+    display: grid;
+    grid-area: sign;
+    .item {
+        background-color: rgb(214, 121, 22);
+    }
+    button:hover {
+        color: red;
+    }
+    
+}
+

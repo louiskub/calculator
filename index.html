@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="container">
+        <div class="topic"></div>
+        <div class="result" id="result"></div>
+        <div class="input">
+            <div class="control">
+                <button class="item" onclick="reset()">AC</button>
+                <button class="item" onclick="del()">
+                    DEL
+                </button>
+                <button class="item" onclick="dis('')">%</button>
+            </div>
+            <div class="number">
+                <button class="item" onclick="dis('7')">7</button>
+                <button class="item" onclick="dis('8')">8</button>
+                <button class="item" onclick="dis('9')">9</button>
+                <button class="item" onclick="dis('4')">4</button>
+                <button class="item" onclick="dis('5')">5</button>
+                <button class="item" onclick="dis('6')">6</button>
+                <button class="item" onclick="dis('1')">1</button>
+                <button class="item" onclick="dis('2')">2</button>
+                <button class="item" onclick="dis('3')">3</button>
+                <button class="item" onclick="dis('0')">0</button>
+                <button class="item" onclick="dis('00')">00</button>
+                <button class="item" onclick="dis('.')">.</button>
+                
+            </div>
+            <div class="sign">
+                <button class="item" onclick="dis('÷')">÷</button>
+                <button class="item" onclick="dis('x')">X</button>
+                <button class="item" onclick="dis('-')">-</button>
+                <button class="item" onclick="dis('+')">+</button>
+                <button class="item" onclick="solve()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+		integrity= 
+"sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
